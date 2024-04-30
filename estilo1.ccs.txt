@@ -1,0 +1,86 @@
+/* Reset básico de estilos para garantizar consistencia en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general de la página */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px; /* Espaciado alrededor de la página */
+}
+
+header {
+    background-color: #0056b3; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto para el encabezado */
+    padding: 10px 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto */
+}
+
+header h1 {
+    margin-bottom: 0; /* Sin margen inferior para el título h1 */
+}
+
+nav {
+    background: #333; /* Fondo del menú de navegación */
+    color: #fff;
+    text-align: center; /* Centra los elementos del menú */
+    padding: 10px 0; /* Espaciado vertical para el nav */
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    font-weight: bold; /* Fuente en negrita para los enlaces */
+}
+
+nav a:hover {
+    background-color: #555; /* Fondo al pasar el ratón */
+}
+
+article {
+    padding: 20px;
+    background: #fff; /* Fondo de los artículos */
+    margin-top: 20px; /* Margen superior para cada artículo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para botones básicos */
+button {
+    background-color: #007bff; /* Azul botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Menor espaciado en dispositivos pequeños */
+    }
+
+    header, nav, footer {
+        text-align: center; /* Alineación central para móviles */
+    }
+}
